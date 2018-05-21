@@ -6,7 +6,7 @@
 
 ### Mi Yu:
 
-### XIning Li:
+### Xining Li:
 * Download S&P 500 component stocks historical data in csv files.
 
 ### Zhipu Zhou (Aaron):
