@@ -1,14 +1,14 @@
 # PSTAT_234_Final_Project
 
-Contribution list:
+## Contribution list:
 
-## Ben Ku:
+### Ben Ku:
 
-## Mi Yu:
+### Mi Yu:
 
-## XIning Li:
+### XIning Li:
 * Download S&P 500 component stocks historical data in csv files.
 
-## Zhipu Zhou (Aaron):
+### Zhipu Zhou (Aaron):
 
 
