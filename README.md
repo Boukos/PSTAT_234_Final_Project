@@ -7,7 +7,9 @@
 ### Mi Yu:
 
 ### Xining Li:
-* Download S&P 500 component stocks historical data in csv files.
+* Download S&P 500 component stocks historical data in csv files from iex.
+* Pickling the S&P 500 Data
+* Created the Zipline starter file using the iex data
 
 ### Zhipu Zhou (Aaron):
 
