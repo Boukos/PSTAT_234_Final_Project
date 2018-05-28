@@ -13,5 +13,5 @@
 * Created the Zipline starter file using the iex data
 
 ### Zhipu Zhou (Aaron):
-* Modified progress report and submitted.
+* Modified progress report.
 
