@@ -5,6 +5,7 @@
 ### Ben Ku:
 
 ### Mi Yu:
+* Write progress report and send it to Zhipu.
 
 ### Xining Li:
 * Download S&P 500 component stocks historical data in csv files from iex.
@@ -12,5 +13,5 @@
 * Created the Zipline starter file using the iex data
 
 ### Zhipu Zhou (Aaron):
-
+* Modify progress report.
 
