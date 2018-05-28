@@ -1,0 +1,184 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts, amssymb, euscript, mathrsfs}
+\usepackage{amsthm, upref}
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{float}
+\usepackage{changes}
+\usepackage{lipsum}
+\definechangesauthor[name={Zhipu Zhou}, color = Red]{z}
+\setremarkmarkup{(#2)}
+%\usepackage{natbib}
+\usepackage[toc,page]{appendix}
+
+%\usepackage{pagecolor,lipsum}% http://ctan.org/pkg/{pagecolor,lipsum}
+%\pagecolor{yellow!30!orange}
+
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+
+\usepackage{tikz}
+%\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage[tmargin=0.75in,bmargin=0.75in,lmargin=0.8in,rmargin=0.8in]{geometry}
+\usepackage{aliascnt}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks,
+	linkcolor={red},
+	citecolor={red},
+	urlcolor={blue}
+}
+
+\newcommand{\mr}{\mathbf}
+\newcommand{\MZ}{\mathbb{Z}}
+\newcommand{\vk}{\varkappa}
+\newcommand{\BQ}{\mathbb{Q}}
+\newcommand{\BR}{\mathbb{R}}
+\newcommand{\BC}{\mathbb{C}}
+\newcommand{\SL}{\sum\limits}
+\newcommand{\IL}{\int\limits}
+\newcommand{\al}{\alpha}
+\newcommand{\be}{\beta}
+\newcommand{\ga}{\gamma}
+\newcommand{\de}{\delta}
+\newcommand{\De}{\Delta}
+\newcommand{\La}{\Gamma}
+\newcommand{\ME}{\mathbf E}
+\newcommand{\vn}{\varnothing}
+\newcommand{\ls}{\varlimsup}
+\newcommand{\CF}{\mathcal F}
+\newcommand{\CH}{\mathcal H}
+\newcommand{\CG}{\mathcal G}
+\newcommand{\MP}{\mathbf P}
+\newcommand{\CE}{\mathcal E}
+\newcommand{\CA}{\mathcal A}
+\newcommand{\CL}{\mathcal L}
+\newcommand{\CS}{\mathcal S}
+\newcommand{\CD}{\mathcal D}
+\newcommand{\CC}{\mathcal C}
+\newcommand{\CN}{\mathcal N}
+\newcommand{\MX}{\mathcal X}
+\newcommand{\MY}{\mathcal Y}
+\newcommand{\CZ}{\mathcal Z}
+\newcommand{\CX}{\mathcal X}
+\newcommand{\CY}{\mathcal Y}
+\newcommand{\CP}{\mathcal P}
+\newcommand{\MU}{\mathbf U}
+\newcommand{\Oa}{\Omega}
+\newcommand{\oa}{\omega}
+\newcommand{\si}{\sigma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\pa}{\partial}
+\renewcommand{\phi}{\varphi}
+\newcommand{\ta}{\theta}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\la}{\Gamma}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\TC}{\tilde{C}}
+\renewcommand{\Re}{\mathop{\mathrm{Re}}\nolimits}
+\renewcommand{\Im}{\mathop{\mathrm{Im}}\nolimits}
+\newcommand{\ol}{\overline}
+\newcommand{\CM}{\mathcal M}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\Si}{\Sigma}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\renewcommand{\comment}[1]{}
+\newcommand{\mU}{\mathbf{U}}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\arginf}{\arg\!\inf}
+\DeclareMathOperator*{\argsup}{\arg\!\sup}
+\DeclareMathOperator{\Osc}{osc}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\SRBM}{SRBM}
+\DeclareMathOperator{\BM}{BM}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\const}{const}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\HS}{HS}
+\DeclareMathOperator{\TV}{TV}
+\DeclareMathOperator{\mes}{mes}
+\DeclareMathOperator{\Int}{int}
+\DeclareMathOperator{\arctg}{arctg}
+\DeclareMathOperator{\arcctg}{arcctg}
+\DeclareMathOperator{\CBP}{CBP}
+\DeclareMathOperator{\Geo}{Geo}
+\DeclareMathOperator{\NB}{NB}
+\DeclareMathOperator{\Poi}{Poi}
+\DeclareMathOperator{\Bin}{Bin}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Exp}{Exp}
+\DeclareMathOperator{\Uni}{Uni}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conclusion}{Simulation Conclusion}[section]
+
+
+
+\begin{document}
+
+\vspace{3.5cm}
+
+\begin{center}
+	{\bf\Large PSTAT 234 Final Project Outline}
+\end{center}
+
+\vspace{0.1cm}
+
+\begin{center}
+	{\bf\large Portfolio Optimization}
+\end{center}
+
+
+\vspace{0.8cm}
+
+\section{Group Member}
+\begin{itemize}
+	\item Ben Ku
+	\item Xining Li
+	\item Mi Yu
+	\item Zhipu Zhou
+\end{itemize}
+
+
+\section{Proposed Data Set}
+
+\begin{itemize}
+	\item Time horizon of data: From 05/21/2013 to 05/18/2018, 5 years of data in total.
+	\item Data: Daily closing prices of S\&P 500 Index component stocks that have a full samples over the above time horizon.
+	\item Data source: \url{https://iextrading.com/}
+\end{itemize}
+
+
+
+
+\section{Project Outline}
+We conduct the back-testing for the minimal variance portfolio optimization over the time horizon from 05/21/2013 to 05/18/2018 for different choices of sample size $n\in\{21, 63, 126, 252\}$ in each re-balancing period over 3 different estimation methods for the covariance matrix $\Sigma$ or its inverse -- the precision matrix $\Omega = \Sigma^{-1}$:
+\begin{itemize}
+	\item Sample covariance matrix
+	\item Graphical lasso estimation
+	\item Ledoit - Wolf estimation
+\end{itemize}
+In the meantime, we will compare the following measurement in portfolio performance:
+\begin{itemize}
+	\item Realized return
+	\item Realized risk
+	\item Realized Sharpe ratio
+	\item Turnover
+	\item Size of short side
+	\item Wealth growth
+\end{itemize}
+
+\end{document}
