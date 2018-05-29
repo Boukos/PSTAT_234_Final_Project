@@ -3,6 +3,7 @@
 ## Contribution list:
 
 ### Ben Ku:
+* Provide the file Graphical Lasso.ipynb
 
 ### Mi Yu:
 * Write progress report and send it to Zhipu.
@@ -12,7 +13,9 @@
 * Pickling the S&P 500 Data
 * Created the Zipline starter file using the iex data
 * Finished the Rebalancing Matrix Algorithm and Realized Return, Waiting for check
+* Write python functions definition in the file Rebalancing.ipynb
 
 ### Zhipu Zhou (Aaron):
 * Modify progress report.
+* Modify python functions definition in Rebalancing.ipynb with Xining.
 
