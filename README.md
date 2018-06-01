@@ -14,8 +14,9 @@
 * Created the Zipline starter file using the iex data
 * Finished the Rebalancing Matrix Algorithm and Realized Return, Waiting for check
 * Write python functions definition in the file Rebalancing.ipynb
+* Write the Turn-Over Rate
 
 ### Zhipu Zhou (Aaron):
 * Modify progress report.
 * Modify python functions definition in Rebalancing.ipynb with Xining.
-
+* Write Size-of-the-short-side
